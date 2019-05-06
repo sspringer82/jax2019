@@ -9,13 +9,13 @@ class Controller {
     // variante 2: promises
     //todoModel.getAllPromise().then(data => res.json(data));
     // variante 3: async/await
-    const data = await todoModel.getAllPromise();
+    const data = await todoModel.getAll();
     res.json(data);
   }
 
-  createAction(req, res) {
-    console.log(req.body);
-    res.send();
+  async createAction(req, res) {
+    const result = await todoModel.create(req.body);
+    res.json(result);
   }
 }
 
