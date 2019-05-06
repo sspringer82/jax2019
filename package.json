@@ -1,0 +1,19 @@
+{
+  "name": "jax2019",
+  "version": "0.0.1",
+  "description": "my fancy conference demo app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sspringer82/jax2019.git"
+  },
+  "author": "Sebastian Springer <sebastian.springer@maibornwolff.de>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sspringer82/jax2019/issues"
+  },
+  "homepage": "https://github.com/sspringer82/jax2019#readme"
+}
