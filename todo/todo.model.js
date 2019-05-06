@@ -1,5 +1,9 @@
 const Todo = require('./todo');
 
+const sqlite3 = require('sqlite3');
+
+const db = new sqlite3.Database('./db.sqlite3');
+
 class TodoModel {
   constructor() {
     this.todos = [
@@ -10,7 +14,16 @@ class TodoModel {
   }
 
   getAll(callback) {
-    return Promise.resolve(this.todos);
+    return new Promise((resolve, reject) => {
+      db.all('SELECT * from Todo', (err, rows) => {
+        if (err) {
+          reject(err);
+        } else {
+          resolve(rows);
+        }
+      });
+    });
+    // return Promise.resolve(this.todos);
   }
 
   getOne(id) {

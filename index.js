@@ -3,6 +3,8 @@ const morgan = require('morgan');
 const fs = require('fs');
 const path = require('path');
 const bodyParser = require('body-parser');
+const expressJwt = require('express-jwt');
+const auth = require('./auth');
 
 const stream = fs.createWriteStream(path.join(__dirname, 'access.log'), {
   flags: 'a',
@@ -20,6 +22,7 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use('/todo', todoRouter);
+app.use('/todo', expressJwt({ secret: 'secret' }), todoRouter);
+app.use('/login', auth);
 
 app.listen(8080);

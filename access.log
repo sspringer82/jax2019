@@ -16,3 +16,8 @@
 ::1 - - [06/May/2019:14:18:06 +0000] "GET /todo/xxx HTTP/1.1" 200 9 "-" "PostmanRuntime/7.6.0"
 ::1 - - [06/May/2019:14:18:35 +0000] "GET /todo/xxx HTTP/1.1" 404 9 "-" "PostmanRuntime/7.6.0"
 ::1 - - [06/May/2019:14:18:37 +0000] "GET /todo/xxx HTTP/1.1" 404 9 "-" "PostmanRuntime/7.6.0"
+::1 - - [06/May/2019:14:27:01 +0000] "GET /todo HTTP/1.1" 200 35 "-" "PostmanRuntime/7.6.0"
+::1 - - [06/May/2019:14:33:26 +0000] "GET /todo HTTP/1.1" 401 1318 "-" "PostmanRuntime/7.6.0"
+::1 - - [06/May/2019:14:35:39 +0000] "POST /login HTTP/1.1" 401 14 "-" "PostmanRuntime/7.6.0"
+::1 - - [06/May/2019:14:36:07 +0000] "POST /login HTTP/1.1" 200 137 "-" "PostmanRuntime/7.6.0"
+::1 - - [06/May/2019:14:36:29 +0000] "GET /todo HTTP/1.1" 200 35 "-" "PostmanRuntime/7.6.0"
