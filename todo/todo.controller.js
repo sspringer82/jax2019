@@ -12,6 +12,11 @@ class Controller {
     const data = await todoModel.getAllPromise();
     res.json(data);
   }
+
+  createAction(req, res) {
+    console.log(req.body);
+    res.send();
+  }
 }
 
 module.exports = new Controller();
