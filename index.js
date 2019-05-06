@@ -1,14 +1,11 @@
-// const http = require('http');
+const express = require('express');
 
-// const requestCallback = (req, res) => res.end('Hello World');
+const app = express();
 
-// const server = http.createServer(requestCallback);
+const todos = [];
 
-// server.listen(8080);
+app.get('/todo', (request, response) => {
+  response.send('Hello World');
+});
 
-const Todo = require('./todo');
-const todo = new Todo('Get up', true);
-
-console.log(todo);
-todo.toggleStatus();
-console.log(todo);
+app.listen(8080);
