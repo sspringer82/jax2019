@@ -5,3 +5,4 @@
 ::1 - - [06/May/2019:13:56:37 +0000] "POST /todo HTTP/1.1" 200 49 "-" "PostmanRuntime/7.6.0"
 ::1 - - [06/May/2019:13:57:53 +0000] "POST /todo HTTP/1.1" 200 46 "-" "PostmanRuntime/7.6.0"
 ::1 - - [06/May/2019:13:58:02 +0000] "GET /todo HTTP/1.1" 200 185 "-" "PostmanRuntime/7.6.0"
+::1 - - [06/May/2019:13:59:41 +0000] "GET /todo/2 HTTP/1.1" 200 4 "-" "PostmanRuntime/7.6.0"
