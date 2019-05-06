@@ -1,4 +1,6 @@
 {
+  "private": true,
+  "type": "module",
   "name": "jax2019",
   "version": "0.0.1",
   "description": "my fancy conference demo app",
