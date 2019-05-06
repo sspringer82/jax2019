@@ -15,3 +15,9 @@ app.get('/todo', (request, response) => {
 });
 
 app.listen(8080);
+
+const router = express.Router();
+
+router.get('/', (req, res) => res.send('foo'));
+
+app.use('/todo', router);

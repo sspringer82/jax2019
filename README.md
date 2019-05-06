@@ -1,5 +1,11 @@
 # JAX 2019
 
+## Die Applikation starten
+
+Zum Start im Entwicklungsmodus: `npm run start:dev`
+
+Zum Start im Produktivmodus: `npm start`
+
 ## Links
 
 - Coding Style: https://github.com/airbnb/javascript
