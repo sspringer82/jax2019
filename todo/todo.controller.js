@@ -13,6 +13,17 @@ class Controller {
     res.json(data);
   }
 
+  async getOneAction(req, res) {
+    const id = parseInt(req.params.id, 10);
+    if (isNaN(id)) {
+      res.status(400);
+      res.send('not found');
+    } else {
+      const todo = await todoModel.getOne(id);
+      res.json(todo);
+    }
+  }
+
   async createAction(req, res) {
     const result = await todoModel.create(req.body);
     res.json(result);

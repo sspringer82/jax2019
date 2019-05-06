@@ -6,9 +6,6 @@ const router = express.Router();
 
 router.get('/', controller.getAction);
 router.post('/', controller.createAction);
-router.get('/:id', (req, res) => {
-  console.log(req.params.id);
-  res.send('yeah');
-});
+router.get('/:id', controller.getOneAction);
 
 module.exports = router;

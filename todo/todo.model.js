@@ -13,6 +13,11 @@ class TodoModel {
     return Promise.resolve(this.todos);
   }
 
+  getOne(id) {
+    const todo = this.todos.find(todo => todo.id === id);
+    return Promise.resolve(todo);
+  }
+
   create(todo) {
     const id = Math.max.apply(null, this.todos.map(todo => todo.id)) + 1;
     const newTodo = { ...todo, id };
