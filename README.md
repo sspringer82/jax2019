@@ -6,6 +6,16 @@ Zum Start im Entwicklungsmodus: `npm run start:dev`
 
 Zum Start im Produktivmodus: `npm start`
 
+## Debugging
+
+1. Starten im Debug modus: `node --inspect-brk index.js``
+
+1. In Chrome: chrome://inspect
+
+1. Remote Target Node auswählen
+
+1. Debuggen :)
+
 ## Body Parser
 
 1. npm install body-parser
