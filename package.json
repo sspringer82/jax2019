@@ -4,7 +4,7 @@
   "description": "my fancy conference demo app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/sspringer82/jax2019/issues"
   },
-  "homepage": "https://github.com/sspringer82/jax2019#readme"
+  "homepage": "https://github.com/sspringer82/jax2019#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
